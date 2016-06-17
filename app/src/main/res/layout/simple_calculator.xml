@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--    Start of simple calculator screen    -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.arc.lumen.calculator.SimpleCalculator"
+        android:id="@+id/my_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight=".8"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+            android:textColor="#212121"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:maxLines="1"
+            android:background="#fff"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5">
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:layout_weight=".25"
+                android:id="@+id/buttonClear"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/clear_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="onClickClear" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="DEL"
+                android:layout_weight=".25"
+                android:id="@+id/buttonDelete"
+                android:background="@drawable/del_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="onClickBackspace" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="%"
+                android:layout_weight=".25"
+                android:id="@+id/buttonMod"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:text="÷"
+                android:layout_weight=".25"
+                android:id="@+id/buttonDivide"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight=".5">
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="1"
+                android:id="@+id/button1"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="2"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="3"
+                android:id="@+id/button3"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="x"
+                android:id="@+id/buttonMultiply"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight=".5">
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="4"
+                android:id="@+id/button4"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="5"
+                android:id="@+id/button5"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="6"
+                android:id="@+id/button6"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="+"
+                android:id="@+id/buttonAdd"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight=".5">
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="7"
+                android:id="@+id/button7"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="8"
+                android:id="@+id/button8"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="9"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/button9" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="-"
+                android:id="@+id/buttonSubtract"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight=".5">
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="."
+                android:id="@+id/buttonDecimal"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="onClickDecimal" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="0"
+                android:background="@drawable/button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/button0" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="="
+                android:id="@+id/buttonEquals"
+                android:background="@drawable/equal_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="onClickEquals" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:text="^"
+                android:id="@+id/buttonPow"
+                android:background="@drawable/operator_button_colors"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    End of simple calculator screen    -->
