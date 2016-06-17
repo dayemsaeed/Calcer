@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryButton">#1976D2</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#01579b</color>
+    <color name="button_ripple_color">#1565c0</color>
+    <color name="clr_button_pressed">#bf360c</color>
+    <color name="clr_button_default">#d84315</color>
+    <color name="del_btn_default">#b71c1c</color>
+    <color name="del_btn_pressed">#971616</color>
+    <color name="equal_btn_pressed">#00457c</color>
+    <color name="equal_btn_default">#01579b</color>
+</resources>
