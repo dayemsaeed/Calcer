@@ -13,7 +13,7 @@ import java.text.DecimalFormat;
 import java.util.regex.Pattern;
 
 /**
- * Created by dayem on 5/20/16 at 6:38 PM.
+ * Created by dayem on 5/20/16 at 6:39 PM.
  */
 public class SimpleCalculator extends Fragment {
 

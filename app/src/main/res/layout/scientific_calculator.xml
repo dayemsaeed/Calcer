@@ -20,7 +20,6 @@
         android:background="#ffffff"
         android:id="@+id/formulaTextView"
         android:inputType="none"
-        android:editable="false"
         android:clickable="true"
         android:paddingTop="10sp" />
 
@@ -38,7 +37,6 @@
         android:background="#ffffff"
         android:id="@+id/resultTextView"
         android:inputType="none"
-        android:editable="false"
         android:clickable="false" />
 
     <LinearLayout

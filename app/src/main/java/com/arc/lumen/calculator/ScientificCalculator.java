@@ -612,7 +612,7 @@ public class ScientificCalculator extends Fragment {
 
     }
 
-    // To show the inverse functions on the formula display when the user long presses one of the advanced operator buttons (trig functions)
+    // To show the inverse functions on the formula display when the user long presses one of the advanced operator buttons (trig functns)
     public void onClickinv(View view) {
 
         Button b = (Button) view;
